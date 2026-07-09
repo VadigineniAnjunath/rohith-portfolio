@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohith Anju Nath Vadigineni — Robotics Software Engineer</title>
+<meta name="description" content="Portfolio of Rohith Anju Nath Vadigineni, Robotics Software Engineer specializing in humanoid robotics, dexterous manipulation, and ROS2.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">
+      <span class="logo-box">RV</span>
+      Rohith A N Vadigineni
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px;">
+      <span class="status-pill"><span class="status-dot"></span>OPEN TO OPPORTUNITIES</span>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Robotics Software Engineer</p>
+        <div class="hero-name-row">
+          <div class="avatar"><img src="profile.jpg" alt="Portrait of Rohith Anju Nath Vadigineni"></div>
+          <h1 class="hero-title">Rohith Anju&nbsp;Nath<br>Vadigineni</h1>
+        </div>
+        <p class="hero-role">Humanoid robotics &amp; <span>dexterous manipulation</span></p>
+        <p class="hero-desc">I build the software that lets humanoid hands think before they move — ROS2 middleware, motion planning, perception, and the SDKs and APIs that turn a pile of actuators into a robot you can actually operate.</p>
+        <div class="hero-meta">
+          <span class="meta-chip">📍 Ulm, Germany</span>
+          <span class="meta-chip">🖐️ 5-finger dexterous hands</span>
+          <span class="meta-chip">⚙️ ROS2 / MoveIt!2</span>
+        </div>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="mailto:rohithvadigineni0904@gmail.com">Get in touch</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/rohith-anju-nath-vadigineni" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn btn-ghost" href="#projects">View projects</a>
+        </div>
+      </div>
+
+      <div class="gripper-wrap">
+        <div class="gripper-frame">
+          <span class="frame-label">unit / gripper_5f</span>
+          <span class="frame-label-r">● live</span>
+          <svg class="hand" viewBox="20 40 360 320" xmlns="http://www.w3.org/2000/svg">
+            <!-- wrist -->
+            <line x1="196" y1="380" x2="196" y2="330" class="segment" stroke-width="14"/>
+            <!-- palm -->
+            <rect x="126" y="222" width="150" height="108" rx="22" class="palm"/>
+            <circle class="tactile" cx="160" cy="258" r="5"/>
+            <circle class="tactile" cx="200" cy="270" r="5"/>
+            <circle class="tactile" cx="240" cy="258" r="5"/>
+
+            <!-- thumb -->
+            <g class="thumb">
+              <line x1="126" y1="290" x2="96" y2="266" class="segment"/>
+              <line x1="96" y1="266" x2="74" y2="238" class="segment"/>
+              <circle cx="126" cy="290" r="6" class="joint"/>
+              <circle cx="96" cy="266" r="5" class="joint"/>
+              <circle cx="74" cy="238" r="5" class="joint"/>
+            </g>
+
+            <!-- index -->
+            <g class="finger-1">
+              <line x1="150" y1="222" x2="150" y2="172" class="segment"/>
+              <circle cx="150" cy="222" r="6" class="joint"/>
+              <g class="mid">
+                <line x1="150" y1="172" x2="150" y2="132" class="segment"/>
+                <circle cx="150" cy="172" r="5" class="joint"/>
+                <circle cx="150" cy="132" r="5" class="joint"/>
+              </g>
+            </g>
+
+            <!-- middle -->
+            <g class="finger-2">
+              <line x1="182" y1="222" x2="182" y2="158" class="segment"/>
+              <circle cx="182" cy="222" r="6" class="joint"/>
+              <g class="mid">
+                <line x1="182" y1="158" x2="182" y2="108" class="segment"/>
+                <circle cx="182" cy="158" r="5" class="joint"/>
+                <circle cx="182" cy="108" r="5" class="joint"/>
+              </g>
+            </g>
+
+            <!-- ring -->
+            <g class="finger-3">
+              <line x1="214" y1="222" x2="214" y2="168" class="segment"/>
+              <circle cx="214" cy="222" r="6" class="joint"/>
+              <g class="mid">
+                <line x1="214" y1="168" x2="214" y2="122" class="segment"/>
+                <circle cx="214" cy="168" r="5" class="joint"/>
+                <circle cx="214" cy="122" r="5" class="joint"/>
+              </g>
+            </g>
+
+            <!-- pinky -->
+            <g class="finger-4">
+              <line x1="246" y1="222" x2="246" y2="182" class="segment"/>
+              <circle cx="246" cy="222" r="6" class="joint"/>
+              <g class="mid">
+                <line x1="246" y1="182" x2="246" y2="146" class="segment"/>
+                <circle cx="246" cy="182" r="5" class="joint"/>
+                <circle cx="246" cy="146" r="5" class="joint"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap joint-divider"><div class="line"></div><div class="node"></div><div class="line"></div></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">01</span><h2>About</h2><div class="section-line"></div></div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a robotics software engineer based in Ulm, Germany, specializing in <strong>ROS2-based humanoid robotics</strong>, dexterous manipulation, and robot perception. Over the past two years I've helped build semi-humanoid robotic systems from the ground up — 5-finger dexterous hands, teleoperation interfaces, ROS2 middleware, SDKs, APIs, and the sensor integration frameworks that hold it all together.</p>
+          <p>My background spans the <strong>full robotics stack</strong>: motion planning with MoveIt!2, Gazebo and MuJoCo simulation, computer vision with OpenCV and YOLO, and simulation-to-real deployment on physical hardware. I like the parts other people skip — the SDK nobody wants to write, the ROS1-to-ROS2 migration nobody wants to own, the sensor pipeline that has to just work.</p>
+          <p>Currently finishing a Master's in Mechatronics, with a thesis built around one hard problem: getting a 5-finger humanoid gripper to sense, plan, and act like it means it.</p>
+        </div>
+        <div class="telemetry">
+          <div class="tele-card">
+            <span class="label">Base</span>
+            <span class="value" style="font-size:17px;">Ulm, DE</span>
+            <span class="sub">Open to relocation</span>
+          </div>
+          <div class="tele-card">
+            <span class="label">Focus</span>
+            <span class="value" style="font-size:17px;">Humanoid&nbsp;Hands</span>
+            <span class="sub">Perception → Planning → Control</span>
+          </div>
+          <div class="tele-card">
+            <span class="label">Core Stack</span>
+            <span class="value" style="font-size:17px;">ROS2 / C++</span>
+            <span class="sub">MoveIt!2, Python, PyQt5</span>
+          </div>
+          <div class="tele-card">
+            <span class="label">Degree</span>
+            <span class="value" style="font-size:17px;">M.Sc. 2025</span>
+            <span class="sub">Mechatronics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap joint-divider"><div class="line"></div><div class="node"></div><div class="line"></div></div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">02</span><h2>Experience</h2><div class="section-line"></div></div>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-head">
+            <div><span class="tl-role">Robotics Software Engineer</span> — <span class="tl-org">Werkstudent</span></div>
+            <span class="tl-date mono">DEC 2024 — MAR 2026</span>
+          </div>
+          <div class="tl-loc mono">Nibotics GmbH · Munich, Germany</div>
+          <ul class="tl-bullets">
+            <li>Led the migration of a 10-node humanoid robotic gripper software stack from ROS1 to ROS2, improving maintainability and real-time communication performance.</li>
+            <li>Designed a PyQt5 operator interface for robot bring-up, manual control, gesture execution, and real-time monitoring of simulated and physical humanoid hand systems.</li>
+            <li>Integrated a 7-axis robotic arm with a 5-finger dexterous hand using ROS2 and MoveIt!2 for coordinated manipulation and task-level execution.</li>
+            <li>Built ROS2 Jazzy ↔ Humble communication pipelines over DDS and UDP for cross-version data exchange.</li>
+            <li>Developed a real-time sensor monitoring framework covering pressure, temperature, microphone, contact, and actuator streams.</li>
+            <li>Published a Python SDK on PyPI with 41 automated tests, plus a ROS2 API layer that sped up motor control, sensor streaming, and gesture-execution integration.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">ROS2</span><span class="tag">MoveIt!2</span><span class="tag">DDS</span><span class="tag">PyQt5</span><span class="tag">RViz2</span><span class="tag">Docker</span><span class="tag">SDK Dev</span>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-head">
+            <div><span class="tl-role">Robotics Assistant</span> — <span class="tl-org">HiWi</span></div>
+            <span class="tl-date mono">NOV 2023 — DEC 2023</span>
+          </div>
+          <div class="tl-loc mono">Hochschule Ravensburg-Weingarten · Weingarten, Germany</div>
+          <ul class="tl-bullets">
+            <li>Simulated and optimized an automated palletizing cell in KUKA.Sim, improving motion sequences and reducing cycle time.</li>
+            <li>Transferred validated simulation logic to a physical KUKA robot, programming and testing routines in KRL.</li>
+            <li>Configured safety zones and workspace constraints to match industrial production conditions.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">KUKA.Sim</span><span class="tag">KRL</span><span class="tag">Industrial Robotics</span>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-head">
+            <div><span class="tl-role">Placement Coordinator</span> — <span class="tl-org">Department of Mechatronics</span></div>
+            <span class="tl-date mono">JAN 2021 — MAY 2022</span>
+          </div>
+          <div class="tl-loc mono">Parul University · Vadodara, India</div>
+          <ul class="tl-bullets">
+            <li>Facilitated student placements for the Department of Mechatronics by recruiting companies and coordinating placement activities.</li>
+            <li>Acted as the link between industry recruiters and graduating engineering students throughout the hiring cycle.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Coordination</span><span class="tag">Recruiting</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap joint-divider"><div class="line"></div><div class="node"></div><div class="line"></div></div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">03</span><h2>Projects</h2><div class="section-line"></div></div>
+      <div class="proj-grid">
+
+        <a class="proj-card featured" href="projects/humanoid-gripper-ros.html">
+          <span class="corner tl"></span><span class="corner br"></span>
+          <span class="proj-status done"><span class="dot"></span>MASTER'S THESIS</span>
+          <h3 class="proj-title">Controlling a Humanoid Robotic Gripper in ROS</h3>
+          <p class="proj-desc">A complete ROS-based software framework for a 5-finger dexterous humanoid robotic gripper — spanning simulation, sensing, motion planning, control, and hardware integration, from CAD to closed-loop control.</p>
+          <div class="tag-row">
+            <span class="tag">ROS1</span><span class="tag">Gazebo</span><span class="tag">MoveIt!</span><span class="tag">C++</span><span class="tag">STM32</span><span class="tag">Fusion 360</span><span class="tag">HMI</span>
+          </div>
+          <span class="card-cta">View project →</span>
+        </a>
+
+        <a class="proj-card" href="projects/slam-object-detection.html">
+          <span class="corner tl"></span><span class="corner br"></span>
+          <span class="proj-status"><span class="dot"></span>ONGOING</span>
+          <h3 class="proj-title">ROS-Based SLAM &amp; Object Detection Pipeline</h3>
+          <p class="proj-desc">A modular ROS2 perception pipeline combining camera acquisition, real-time object detection, and visualization — built toward semantic mapping and 3D localization.</p>
+          <div class="tag-row">
+            <span class="tag">ROS2</span><span class="tag">OpenCV</span><span class="tag">YOLO</span><span class="tag">RTAB-Map</span>
+          </div>
+          <span class="card-cta">View project →</span>
+        </a>
+
+        <a class="proj-card" href="projects/tiago-apriltag-navigation.html">
+          <span class="corner tl"></span><span class="corner br"></span>
+          <span class="proj-status done"><span class="dot"></span>COMPLETE</span>
+          <h3 class="proj-title">Autonomous Navigation with AprilTags</h3>
+          <p class="proj-desc">Autonomous navigation and task execution for PAL Robotics' Tiago robot, using AprilTag-based localization for reliable positioning in structured environments.</p>
+          <div class="tag-row">
+            <span class="tag">ROS</span><span class="tag">FlexBE</span><span class="tag">AprilTags</span><span class="tag">Docker</span>
+          </div>
+          <span class="card-cta">View project →</span>
+        </a>
+
+        <a class="proj-card" href="projects/elevator-interface-design.html">
+          <span class="corner tl"></span><span class="corner br"></span>
+          <span class="proj-status done"><span class="dot"></span>ACADEMIC PROJECT</span>
+          <h3 class="proj-title">Elevator Interface &amp; Control System</h3>
+          <p class="proj-desc">A complete elevator automation system built in Siemens TIA Portal — floor selection, movement control, and door operation via PLC ladder logic.</p>
+          <div class="tag-row">
+            <span class="tag">TIA Portal</span><span class="tag">PLC</span><span class="tag">Factory I/O</span>
+          </div>
+          <span class="card-cta">View project →</span>
+        </a>
+
+        <a class="proj-card" href="projects/maze-runner-robot.html">
+          <span class="corner tl"></span><span class="corner br"></span>
+          <span class="proj-status done"><span class="dot"></span>PERSONAL PROJECT</span>
+          <h3 class="proj-title">Maze Runner Robot</h3>
+          <p class="proj-desc">An autonomous maze-navigating robot built from scratch — sensor-driven pathfinding with closed-loop control for smooth, obstacle-free traversal.</p>
+          <div class="tag-row">
+            <span class="tag">Embedded C</span><span class="tag">PID Control</span><span class="tag">IR / Ultrasonic Sensors</span>
+          </div>
+          <span class="card-cta">View project →</span>
+        </a>
+
+      </div>
+
+      <div class="more-projects-head"><span>Smaller builds &amp; coursework</span><div class="line"></div></div>
+      <div class="compact-grid">
+        <a class="compact-card" href="projects/virtual-poster-ar.html">
+          <h4>Virtual Poster Positioning (AR)</h4>
+          <p>OpenCV and ArUco markers for real-world detection and tracking, with camera calibration and depth estimation for stable poster placement in AR.</p>
+          <div class="tag-row"><span class="tag">OpenCV</span><span class="tag">ArUco</span><span class="tag">AR</span></div>
+          <span class="card-cta">View project →</span>
+        </a>
+        <a class="compact-card" href="projects/whatsapp-llm-chatbot.html">
+          <h4>WhatsApp Event Chatbot (LLM)</h4>
+          <p>A GPT-powered WhatsApp chatbot that manages event reminders and answers attendee questions naturally, with context-aware responses.</p>
+          <div class="tag-row"><span class="tag">LLM / GPT</span><span class="tag">Chatbot</span></div>
+          <span class="card-cta">View project →</span>
+        </a>
+        <a class="compact-card" href="projects/traffic-light-fsm-stm32.html">
+          <h4>Traffic Light FSM on STM32</h4>
+          <p>A finite-state-machine traffic light controller on an STM board with LED indicators, modeling dynamic timing across multiple traffic scenarios.</p>
+          <div class="tag-row"><span class="tag">STM32</span><span class="tag">FSM</span><span class="tag">Embedded C</span></div>
+          <span class="card-cta">View project →</span>
+        </a>
+        <a class="compact-card" href="projects/traffic-light-plc.html">
+          <h4>Traffic Light Control (PLC)</h4>
+          <p>A PLC-programmed traffic signal simulation replicating realistic signal sequencing, built to reinforce industrial ladder-logic workflows.</p>
+          <div class="tag-row"><span class="tag">PLC</span><span class="tag">Ladder Logic</span></div>
+          <span class="card-cta">View project →</span>
+        </a>
+        <a class="compact-card" href="projects/ultrasonic-speed-control.html">
+          <h4>Ultrasonic Speed Control</h4>
+          <p>A mobile robot that adjusts velocity in real time based on proximity to nearby objects, combining sensor fusion with Python-based control.</p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">Ultrasonic</span><span class="tag">Sensor Fusion</span></div>
+          <span class="card-cta">View project →</span>
+        </a>
+        <a class="compact-card" href="projects/accident-self-restraint.html">
+          <h4>Accident Self-Restraint System</h4>
+          <p>Ultrasonic, LDR, gas (MQ-3), and IR sensors combined for obstacle avoidance, automatic headlight control, and alcohol-based safety interlocks.</p>
+          <div class="tag-row"><span class="tag">Arduino</span><span class="tag">Sensor Fusion</span><span class="tag">Safety Systems</span></div>
+          <span class="card-cta">View project →</span>
+        </a>
+        <a class="compact-card" href="projects/assistive-mobility-robot.html">
+          <h4>Assistive Mobility Robot</h4>
+          <p>A vehicle fitted with a robotic arm for physically handicapped users, able to pick up and transport everyday items alongside autonomous navigation.</p>
+          <div class="tag-row"><span class="tag">Arduino IDE</span><span class="tag">C++</span><span class="tag">Assistive Tech</span></div>
+          <span class="card-cta">View project →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap joint-divider"><div class="line"></div><div class="node"></div><div class="line"></div></div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">04</span><h2>Skills</h2><div class="section-line"></div></div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Robotics &amp; Middleware</h4>
+          <div class="chip-row">
+            <span class="chip">ROS2</span><span class="chip">ROS</span><span class="chip">DDS</span><span class="chip">MoveIt!</span><span class="chip">MoveIt!2</span><span class="chip">Nav2</span><span class="chip">URDF/Xacro</span><span class="chip">ROS2 Control</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Humanoid Robotics</h4>
+          <div class="chip-row">
+            <span class="chip">Dexterous Manipulation</span><span class="chip">Motion Planning</span><span class="chip">Teleoperation</span><span class="chip">Tactile Sensing</span><span class="chip">Sensor Fusion</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Perception &amp; Simulation</h4>
+          <div class="chip-row">
+            <span class="chip">OpenCV</span><span class="chip">YOLO</span><span class="chip">SLAM</span><span class="chip">AprilTags</span><span class="chip">ArUco</span><span class="chip">Gazebo</span><span class="chip">RViz</span><span class="chip">MuJoCo</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Programming &amp; Embedded</h4>
+          <div class="chip-row">
+            <span class="chip">Python</span><span class="chip">C++</span><span class="chip">C</span><span class="chip">MATLAB</span><span class="chip">Simulink</span><span class="chip">STM32</span><span class="chip">ESP32</span><span class="chip">Raspberry Pi</span><span class="chip">Arduino</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>DevOps &amp; Tools</h4>
+          <div class="chip-row">
+            <span class="chip">Docker</span><span class="chip">Git</span><span class="chip">FlexBE</span><span class="chip">SDK Development</span><span class="chip">API Development</span><span class="chip">pip Packaging</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Industrial Automation</h4>
+          <div class="chip-row">
+            <span class="chip">KUKA.Sim</span><span class="chip">KRL</span><span class="chip">ABB RobotStudio</span><span class="chip">Siemens TIA Portal</span><span class="chip">PLC</span><span class="chip">Factory I/O</span><span class="chip">Codesys</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Design Tools</h4>
+          <div class="chip-row">
+            <span class="chip">SOLIDWORKS</span><span class="chip">Fusion 360</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap joint-divider"><div class="line"></div><div class="node"></div><div class="line"></div></div>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">05</span><h2>Certifications</h2><div class="section-line"></div></div>
+      <div class="compact-grid" style="grid-template-columns:repeat(3, 1fr);">
+        <a class="compact-card" href="certifications/industrial-automation-fundamentals.html">
+          <h4>Industrial Automation Fundamentals</h4>
+          <p>Programming languages, communication protocols, and system architecture for modern industrial environments.</p>
+          <span class="card-cta">View details →</span>
+        </a>
+        <a class="compact-card" href="certifications/abb-robotstudio-specialization.html">
+          <h4>ABB RobotStudio Specialization</h4>
+          <p>Simulation environments, RAPID programming, cell design, and virtual commissioning.</p>
+          <span class="card-cta">View details →</span>
+        </a>
+        <a class="compact-card" href="certifications/plc-systems-ladder-logic.html">
+          <h4>PLC Systems &amp; Ladder Logic</h4>
+          <p>Sinking/sourcing inputs, timers and counters, memory organization, and Boolean logic operations.</p>
+          <span class="card-cta">View details →</span>
+        </a>
+        <a class="compact-card" href="certifications/machine-learning-foundations.html">
+          <h4>Machine Learning Foundations</h4>
+          <p>Six-week program covering k-NN, linear/logistic regression, decision trees, random forest, and clustering.</p>
+          <span class="card-cta">View details →</span>
+        </a>
+        <a class="compact-card" href="certifications/robotic-manipulators.html">
+          <h4>Robotic Manipulators</h4>
+          <p>Kinematics, dynamics, and control theory, applied via MATLAB's Robotics Toolbox for trajectory planning.</p>
+          <span class="card-cta">View details →</span>
+        </a>
+        <a class="compact-card" href="certifications/matlab-control-system-design.html">
+          <h4>MATLAB &amp; Control System Design</h4>
+          <p>MATLAB Onramp, Simulink modeling, and Control Design Onramp with PID tuning and stability analysis.</p>
+          <span class="card-cta">View details →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap joint-divider"><div class="line"></div><div class="node"></div><div class="line"></div></div>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">06</span><h2>Education</h2><div class="section-line"></div></div>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <h3 class="edu-degree">M.Sc. Mechatronics</h3>
+          <div class="edu-school">Hochschule Ravensburg-Weingarten, Germany</div>
+          <div class="edu-date mono">SEP 2022 — AUG 2025</div>
+          <div class="edu-thesis">
+            <strong>Thesis: Design &amp; Implementation Controlling a Humanoid Robotic Gripper in ROS</strong>
+            A full-stack ROS framework for a 5-finger dexterous hand — simulation, sensing, planning, control, and hardware integration.
+          </div>
+        </div>
+        <div class="edu-card">
+          <h3 class="edu-degree">B.E. Mechatronics Engineering</h3>
+          <div class="edu-school">Parul University, Vadodara, India</div>
+          <div class="edu-date mono">JUL 2018 — MAY 2022</div>
+          <div class="edu-thesis">
+            <strong>Project: Elevator Interface Model Design</strong>
+            Built a full elevator automation system in Siemens TIA Portal with PLC ladder logic and a real-time HMI.
+          </div>
+        </div>
+      </div>
+
+      <div class="lang-row">
+        <div class="lang-chip"><span class="lang-name">English</span><span class="lang-level">C2</span><span class="signal"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span></span></div>
+        <div class="lang-chip"><span class="lang-name">German</span><span class="lang-level">B1</span><span class="signal"><span class="on"></span><span class="on"></span><span></span><span></span></span></div>
+        <div class="lang-chip"><span class="lang-name">Hindi</span><span class="lang-level">C2</span><span class="signal"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span></span></div>
+        <div class="lang-chip"><span class="lang-name">Telugu</span><span class="lang-level">Native</span><span class="signal"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-box">
+        <h2>Let's build something that moves.</h2>
+        <p>Open to robotics software roles focused on humanoid systems, manipulation, or perception — reach out directly, no gatekeepers.</p>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="mailto:rohithvadigineni0904@gmail.com">rohithvadigineni0904@gmail.com</a>
+          <a class="btn btn-ghost" href="tel:+4915215823153">+49 152 15823153</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/rohith-anju-nath-vadigineni" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Rohith Anju Nath Vadigineni · Built in Ulm, Germany · gripper_status: OPEN</p>
+</footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
+</script>
+
+</body>
+</html>

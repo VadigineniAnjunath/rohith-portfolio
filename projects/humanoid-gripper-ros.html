@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Controlling a Humanoid Robotic Gripper in ROS — Rohith Anju Nath Vadigineni</title>
+<meta name="description" content="A complete ROS-based software framework for a 5-finger dexterous humanoid robotic gripper — spanning simulation, sensing, motion planning, control, and hardware integration, from CAD to closed-loop control.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <span class="logo-box">RV</span>
+      Rohith A N Vadigineni
+    </a>
+    <a href="../index.html#projects" class="back-link" style="margin:0;">← All projects</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap detail-nav">
+    <a href="../index.html#projects" class="back-link">← Back to projects</a>
+    <div class="detail-header">
+      <span class="proj-status"><span class="dot"></span>MASTER'S THESIS</span>
+      <h1 class="detail-title">Controlling a Humanoid Robotic Gripper in ROS</h1>
+      <p class="detail-tagline">A complete ROS-based software framework for a 5-finger dexterous humanoid robotic gripper — spanning simulation, sensing, motion planning, control, and hardware integration, from CAD to closed-loop control.</p>
+      <div class="tag-row">
+        <span class="tag">ROS1</span>
+            <span class="tag">Gazebo</span>
+            <span class="tag">MoveIt!</span>
+            <span class="tag">C++</span>
+            <span class="tag">STM32</span>
+            <span class="tag">Fusion 360</span>
+            <span class="tag">HMI</span>
+      </div>
+    </div>
+
+    <div class="detail-body">
+      <div>
+        <div class="detail-block">
+          <h3>Overview</h3>
+          <p>This thesis set out to answer one question: can a 5-finger humanoid gripper sense, plan, and act reliably enough to trust near real objects? The answer became a full-stack ROS framework spanning mechanical design, simulation, low-level sensing, motion planning, and a control interface a human could actually operate.</p>
+        </div>
+        <div class="detail-block">
+          <h3>What I built</h3>
+          <ul>
+            <li>Built URDF robot models directly from Fusion 360 mechanical CAD designs and integrated them into Gazebo for validation and testing.</li>
+            <li>Set up Dockerized ROS environments with MoveIt!-based motion planning for dexterous manipulation and trajectory execution.</li>
+            <li>Wrote custom C++ tactile and barometric pressure sensor plugins, ROS nodes, and controllers for real-time monitoring and interaction feedback.</li>
+            <li>Developed a C++ library bridging ROS with the gripper's firmware, plus SOCAT-based communication for real-time sensor streaming through a custom HMI.</li>
+            <li>Designed a web-based HMI for robot control, sensor visualization, and system interaction across simulation and hardware.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="detail-sidebar">
+        <div class="tele-card">
+          <span class="label">Context</span>
+          <span class="value" style="font-size:15px;">Master's Thesis · Hochschule Ravensburg-Weingarten · 2024–2025</span>
+        </div>
+        <div class="tele-card">
+          <span class="label">Tech Stack</span>
+          <div class="tag-row" style="margin-top:8px;">
+            <span class="tag">ROS1</span>
+            <span class="tag">Gazebo</span>
+            <span class="tag">MoveIt!</span>
+            <span class="tag">C++</span>
+            <span class="tag">STM32</span>
+            <span class="tag">Fusion 360</span>
+            <span class="tag">HMI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap detail-next">
+    <a href="slam-object-detection.html">
+      <span>Next project</span>
+      <span>ROS-Based SLAM & Object Detection Pipeline →</span>
+    </a>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 Rohith Anju Nath Vadigineni · Built in Ulm, Germany · gripper_status: OPEN</p>
+</footer>
+
+</body>
+</html>
