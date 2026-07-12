@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Controlling a Humanoid Robotic Gripper in ROS — Rohith Anju Nath Vadigineni</title>
+<title>Design and Implementation of Controlling a Humanoid Robotic Gripper in ROS — Rohith Anju Nath Vadigineni</title>
 <meta name="description" content="A complete ROS-based software framework for a 5-finger dexterous humanoid robotic gripper — spanning simulation, sensing, motion planning, control, and hardware integration, from CAD to closed-loop control.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
     <a href="../index.html#projects" class="back-link">← Back to projects</a>
     <div class="detail-header">
       <span class="proj-status"><span class="dot"></span>MASTER'S THESIS</span>
-      <h1 class="detail-title">Controlling a Humanoid Robotic Gripper in ROS</h1>
+      <h1 class="detail-title">Design and Implementation of Controlling a Humanoid Robotic Gripper in ROS</h1>
       <p class="detail-tagline">A complete ROS-based software framework for a 5-finger dexterous humanoid robotic gripper — spanning simulation, sensing, motion planning, control, and hardware integration, from CAD to closed-loop control.</p>
       <div class="tag-row">
         <span class="tag">ROS1</span>
@@ -44,16 +44,26 @@
       <div>
         <div class="detail-block">
           <h3>Overview</h3>
-          <p>This thesis set out to answer one question: can a 5-finger humanoid gripper sense, plan, and act reliably enough to trust near real objects? The answer became a full-stack ROS framework spanning mechanical design, simulation, low-level sensing, motion planning, and a control interface a human could actually operate.</p>
+          <p>This master's thesis focused on designing and implementing a complete ROS-based control framework for a 5-finger humanoid robotic gripper. The project integrated mechanical design, robot simulation, motion planning, tactile sensing, hardware communication, and human-machine interaction into a unified robotic system capable of both simulated and real-world operation.</p>
         </div>
         <div class="detail-block">
           <h3>What I built</h3>
           <ul>
-            <li>Built URDF robot models directly from Fusion 360 mechanical CAD designs and integrated them into Gazebo for validation and testing.</li>
-            <li>Set up Dockerized ROS environments with MoveIt!-based motion planning for dexterous manipulation and trajectory execution.</li>
-            <li>Wrote custom C++ tactile and barometric pressure sensor plugins, ROS nodes, and controllers for real-time monitoring and interaction feedback.</li>
-            <li>Developed a C++ library bridging ROS with the gripper's firmware, plus SOCAT-based communication for real-time sensor streaming through a custom HMI.</li>
-            <li>Designed a web-based HMI for robot control, sensor visualization, and system interaction across simulation and hardware.</li>
+            <li>Designed and developed the complete URDF/Xacro robot model from Fusion 360 CAD assemblies, enabling accurate simulation and visualization in Gazebo and RViz.</li>
+          
+            <li>Configured Dockerized ROS development environments and integrated MoveIt! for motion planning, trajectory execution, and dexterous manipulation.</li>
+          
+            <li>Developed custom C++ Gazebo plugins and ROS nodes for pressure and contact sensing, enabling real-time tactile feedback and object interaction monitoring.</li>
+          
+            <li>Built a C++ communication library connecting ROS with the gripper's STM32 firmware, using SOCAT-based serial communication for reliable real-time sensor and actuator data exchange.</li>
+          
+            <li>Designed and developed a web-based HMI for robot control, gesture execution, sensor visualization, and system monitoring across both simulation and physical hardware.</li>
+          
+            <li>Developed ROS controllers for joint control, trajectory execution, and hardware interfacing, enabling seamless switching between simulation and the physical robotic gripper.</li>
+          
+            <li>Integrated pressure sensors, contact sensors, and joint-state feedback into the ROS ecosystem, providing real-time visualization and monitoring tools for system validation.</li>
+          
+            <li>Validated the complete software stack through simulation-to-real deployment, demonstrating coordinated motion planning, hardware communication, tactile sensing, and interactive robot control.</li>
           </ul>
         </div>
       </div>
