@@ -28,13 +28,14 @@
     <div class="detail-header">
       <span class="proj-status"><span class="dot"></span>ONGOING</span>
       <h1 class="detail-title">ROS-Based SLAM &amp; Object Detection Pipeline</h1>
-      <p class="detail-tagline">A modular ROS2 perception pipeline combining camera acquisition, real-time object detection, and visualization — built toward semantic mapping and 3D localization.</p>
+      <p class="detail-tagline">A ROS2 SLAM pipeline focused on real-time localization and mapping — building a complete map of the environment while integrating YOLOv2 object detection for bounding-box-level scene understanding. Still actively in progress.</p>
       <div class="tag-row">
         <span class="tag">ROS2</span>
             <span class="tag">OpenCV</span>
             <span class="tag">YOLO</span>
             <span class="tag">Gazebo</span>
             <span class="tag">MuJoCo</span>
+            <span class="tag">SLAM</span>
             <span class="tag">RTAB-Map</span>
             <span class="tag">CvBridge</span>
       </div>
@@ -48,11 +49,12 @@
         </div>
         <div class="detail-block">
           <h3>What I built</h3>
-          <ul>
-            <li>Built custom ROS2 nodes for image streaming, camera calibration, object detection, and dataset collection using standard ROS2 communication interfaces.</li>
-            <li>Integrated YOLO-based real-time object detection with ROS2 vision pipelines, publishing structured detection data for downstream robotic perception applications.</li>
-            <li>Developed and validated perception workflows in Gazebo and MuJoCo simulation environments with a focus on future SLAM integration and sim-to-real deployment.</li>
-            <li>Extending the system toward semantic mapping and 3D object localization through RTAB-Map, depth sensing, TF transformations, and sensor fusion techniques.</li>
+         <ul>
+            <li>Built a ROS2 SLAM pipeline focused on real-time localization and mapping, using an Intel RealSense depth camera to generate a complete map of the environment as the robot moves through it.</li>
+            <li>Integrated YOLOv2-based real-time object detection into the perception pipeline, publishing bounding-box detections alongside the SLAM map for richer scene understanding.</li>
+            <li>Developed custom ROS2 nodes for RealSense image and depth streaming, camera calibration, and dataset collection using standard ROS2 communication interfaces.</li>
+            <li>Leveraged the RealSense camera's depth data for point-cloud generation and obstacle-aware mapping, feeding directly into the SLAM localization loop.</li>
+            <li>Validated the pipeline in Gazebo and MuJoCo simulation environments, with the project still actively in progress toward full semantic mapping and 3D object localization.</li>
           </ul>
         </div>
       </div>
@@ -69,6 +71,7 @@
             <span class="tag">YOLO</span>
             <span class="tag">Gazebo</span>
             <span class="tag">MuJoCo</span>
+            <span class="tag">SLAM</span>
             <span class="tag">RTAB-Map</span>
             <span class="tag">CvBridge</span>
           </div>
